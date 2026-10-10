@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L'équipe · Inside Mood</title>
+  <meta name="description" content="L'équipe Inside Mood : Sandrine Van Eldom et ses collaborateurs, à Lasne.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="equipe">
+  <div id="site-header"></div>
+  <main id="contenu" class="page">
+    <header class="gb-page-title">
+      <p class="eyebrow">L'équipe</p>
+      <h1>L'équipe</h1>
+    </header>
+    <section class="sandrine-feature">
+      <div class="sandrine-copy">
+        <p class="motto">Dévouement. Compétence. Passion.</p>
+        <p>Architecte d’intérieur depuis 1999, formée au CAD à Bruxelles, Sandrine Van Eldom est la fondatrice de ce bureau d’architecture d’intérieur. Au fil des années, elle s’est entourée d’architectes et de corps de métier hautement qualifiés afin de donner vie à des projets d’exception, où créativité, expertise et savoir-faire se rencontrent pour créer des espaces uniques. Forte de cette expérience, elle a également fondé SAHO, sa propre marque de coussins, prolongeant ainsi son univers créatif jusque dans le textile et le détail.</p>
+        <a class="btn btn-dark" href="https://www.saho.design/" target="_blank" rel="noopener noreferrer">Découvrir l’univers Saho</a>
+      </div>
+      <figure>
+        <img src="equipe/sandrine-matieres.png" alt="Sandrine Van Eldom en conversation, parmi les coussins et les tissus">
+      </figure>
+    </section>
+    <div class="team-grid" id="team-grid"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script>
+    document.getElementById("team-grid").innerHTML = TEAM.map((person) => `
+      <article class="person">
+        <img src="${person.photo}" alt="Portrait de ${person.name}">
+        <h2>${person.name}</h2>
+        <p class="role">${person.role}</p>
+        <a href="mailto:${person.email}">${person.email}</a>
+        <a href="tel:${person.phone.replace(/\s/g, "")}">${person.phone}</a>
+      </article>
+    `).join("");
+  </script>
+  <script src="js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inside Mood — architecture et architecture d'intérieur</title>
+  <meta name="description" content="Inside Mood, bureau d'architecture et d'architecture d'intérieur à Lasne. Établissements publics, magasins, rénovation, extension et construction de maisons.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="home" data-page="accueil">
+  <div id="site-header"></div>
+  <main id="contenu">
+    <section class="gb-hero">
+      <img src="accueil.png" alt="Le bureau Inside Mood, sous les poutres, avec les écrans de travail">
+      <div class="gb-hero-copy">
+        <p class="gb-statement">Inside Mood est un bureau d'architecture et d'architecture d'intérieur. Établissements publics, magasins, rénovation, extension et construction de maisons sont pensés dans un même geste, entre charme d'époque et langage d'aujourd'hui.</p>
+      </div>
+    </section>
+
+    <div class="gb-marks" aria-hidden="true">
+      <span class="gb-mark is-point"></span>
+      <span class="gb-mark"></span>
+      <span class="gb-mark is-point"></span>
+    </div>
+
+    <section class="gb-story">
+      <figure class="gb-mood">
+        <img src="histoire/moodboard.png" alt="Échantillons de matières, tissus et bois, entre les mains">
+      </figure>
+      <div class="gb-story-copy">
+        <h2>Notre histoire…</h2>
+        <p>Chez Inside Mood, nous sommes avant tout une équipe. Des sensibilités, des idées et des regards différents qui se rencontrent pour donner naissance à des espaces singuliers.</p>
+        <p>Nous avons une véritable passion pour les matières, les textures, les volumes et les univers. Mais au-delà de l’esthétique, nous aimons surtout comprendre ce qui donne du sens à un lieu. Chaque choix est réfléchi : une matière pour sa texture, une lumière pour son ambiance, une circulation pour son usage, un détail pour son caractère.</p>
+        <p>Nous concevons des intérieurs où l’esthétique et la fonctionnalité se répondent, où rien n’est laissé au hasard et où chaque élément trouve naturellement sa place.</p>
+        <p>Notre force réside dans cette approche collective : échanger, questionner, confronter nos idées et aller plus loin ensemble pour créer des espaces qui ne sont pas seulement beaux, mais qui vous ressemblent, qui racontent quelque chose et qui sont pensés pour durer.</p>
+      </div>
+    </section>
+
+    <div class="gb-cats" id="home-filters">
+      <button type="button" class="is-on" data-filter="tous">Tous</button>
+      <button type="button" data-filter="etablissements">Établissements</button>
+      <button type="button" data-filter="magasins">Magasins</button>
+      <button type="button" data-filter="maisons">Maisons</button>
+    </div>
+
+    <section class="section gb-projects" id="projets">
+      <h2>Les projets</h2>
+      <div class="home-grid" id="work-grid"></div>
+    </section>
+
+    <section class="section compare-section" id="avant-apres">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Avant · Après</p>
+          <h2>La transformation</h2>
+        </div>
+        <p class="section-note">Faites glisser le curseur pour passer du projet dessiné au lieu réalisé.</p>
+      </div>
+      <div class="compare-row" id="compare-row"></div>
+    </section>
+
+    <section class="ongoing-light" aria-label="Projets à venir">
+      <p class="eyebrow">Prochainement…</p>
+      <div class="soon-marquee">
+        <div class="soon-track" id="ongoing-list"></div>
+      </div>
+    </section>
+
+    <section class="section process" id="processus">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Comment nous travaillons</p>
+          <h2>Le processus</h2>
+        </div>
+        <p class="section-note">Une mission suivie du premier échange jusqu'au lieu habité.</p>
+      </div>
+      <div class="process-board" id="process-board">
+        <article class="pc pc-1">
+          <span>01</span>
+          <h3>Rencontre</h3>
+          <p>On écoute le lieu, vos usages et l'ambiance que vous souhaitez.</p>
+        </article>
+        <article class="pc pc-2">
+          <span>02</span>
+          <h3>Conception</h3>
+          <p>L'architecte d'intérieur et les architectes dessinent ensemble les premières propositions.</p>
+        </article>
+        <article class="pc pc-3">
+          <span>03</span>
+          <h3>Projet</h3>
+          <p>Matières, lumière, plans et détails se précisent pour un ensemble cohérent.</p>
+        </article>
+        <article class="pc pc-4">
+          <span>04</span>
+          <h3>Réalisation</h3>
+          <p>Nous coordonnons tous les corps de métier, jusqu'à la livraison.</p>
+        </article>
+        <div class="process-frame" aria-hidden="true">
+          <svg class="process-draw" viewBox="0 0 100 100">
+            <path class="process-line" pathLength="100" d="M 1 1 H 99" />
+            <path class="process-line" pathLength="100" d="M 99 1 V 99" />
+            <path class="process-line" pathLength="100" d="M 99 99 H 1" />
+            <path class="process-line" pathLength="100" d="M 1 99 V 1" />
+            <circle class="process-dot" cx="1" cy="1" r="1.8" />
+            <circle class="process-dot" cx="99" cy="1" r="1.8" />
+            <circle class="process-dot" cx="99" cy="99" r="1.8" />
+            <circle class="process-dot" cx="1" cy="99" r="1.8" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bureau" id="equipe">
+      <p class="eyebrow">Le bureau</p>
+      <h2>L'équipe</h2>
+      <div class="team-grid" id="team-home"></div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <p class="eyebrow">Les questions fréquentes</p>
+      <h2>F.A.Q</h2>
+      <div class="faq">
+        <article class="faq-item is-open">
+          <div class="faq-q">
+            <p>Est-ce qu’une architecte d’intérieur coûte cher ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="true" aria-controls="faq-1" aria-label="Réduire la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-1">
+            <div><p>Faire appel à une architecte d’intérieur représente un investissement, mais un projet bien préparé peut aussi permettre de réaliser des économies. Une réflexion menée en amont permet d’anticiper les détails, d’éviter les erreurs et les modifications coûteuses en cours de chantier.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>Une architecte d’intérieur doit-elle toujours tout changer ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-2" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-2">
+            <div><p>Non. L’objectif n’est pas de remplacer systématiquement ce qui existe, mais de valoriser l’existant lorsque cela est pertinent et de transformer uniquement ce qui doit l’être. Chaque élément est étudié pour trouver le juste équilibre entre conservation, transformation et nouveauté.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>Une architecte d’intérieur intervient-elle uniquement sur une maison entière ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-3" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-3">
+            <div><p>Non. Une architecte d’intérieur peut intervenir sur une seule pièce, plusieurs espaces ou un projet complet. L’accompagnement s’adapte à vos besoins, à votre projet et au niveau d’intervention souhaité.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>Peut-elle travailler avec les meubles que je possède déjà ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-4" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-4">
+            <div><p>Oui. Les meubles existants peuvent parfaitement être intégrés à un nouveau projet lorsqu’ils correspondent à l’espace et à vos besoins. L’objectif est de créer une harmonie entre l’existant, les nouvelles pièces et les éléments sur mesure.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>La lumière naturelle suffit-elle pour bien éclairer un intérieur ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-5" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-5">
+            <div><p>Pas toujours. Un projet lumineux repose sur un équilibre entre lumière naturelle et éclairage artificiel. Différentes sources peuvent être pensées selon les usages : éclairage général, fonctionnel ou décoratif.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>Une architecte d’intérieur peut-elle m’aider à respecter mon budget ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-6" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-6">
+            <div><p>Oui. Son rôle est aussi de vous accompagner dans vos choix afin de maîtriser votre budget. Définition des priorités, choix des matériaux, comparaison des solutions… chaque décision est réfléchie pour construire un projet cohérent avec vos moyens.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>Si j’ai déjà un plan de ma maison, ai-je besoin d’une architecte d’intérieur ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-7" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-7">
+            <div><p>Un plan constitue une excellente base, mais il ne suffit pas toujours à optimiser un intérieur. Une architecte peut repenser l’implantation, les circulations, les volumes et les usages afin d’adapter réellement l’espace à votre mode de vie.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>Deux pièces de même taille peuvent-elles nécessiter des aménagements différents ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-8" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-8">
+            <div><p>Absolument. La surface ne fait pas tout. La circulation, les ouvertures, la lumière, les contraintes techniques et le mode de vie influencent directement la manière dont un espace doit être aménagé.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>Dois-je savoir exactement ce que je veux avant de contacter une architecte ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-9" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-9">
+            <div><p>Pas du tout. Quelques photos, des inspirations Pinterest, des envies ou même simplement « Je veux que ma maison soit plus agréable » peuvent suffire pour commencer. C’est justement le rôle de l’architecte d’intérieur de transformer vos envies et vos besoins en un projet cohérent et personnalisé.</p></div>
+          </div>
+        </article>
+        <article class="faq-item">
+          <div class="faq-q">
+            <p>Combien coûtent les services d’une architecte d’intérieur ?</p>
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-10" aria-label="Afficher la réponse"></button>
+          </div>
+          <div class="faq-a" id="faq-10">
+            <div><p>Le tarif dépend de la nature et de l’ampleur de la mission. Les honoraires peuvent prendre la forme d’un forfait pour un dossier, d’un tarif horaire, d’une mission complète ou d’un pourcentage du montant des travaux. Chaque projet étant différent, nous définissons ensemble la formule la plus adaptée à vos besoins et à votre budget.</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section partners" aria-labelledby="partenaires-titre">
+      <div class="section-head">
+        <h2 id="partenaires-titre">Nos partenaires de confiance</h2>
+      </div>
+      <div class="partner-grid">
+      <ul class="partner-row">
+        <li>
+          <div class="partner-logo"><img src="partenaires/distrinox.png" alt=""></div>
+          <p>Distrinox</p>
+        </li>
+        <li>
+          <div class="partner-logo"><img src="partenaires/lmd.png" alt=""></div>
+          <p>LMD concept- Menuiserie</p>
+        </li>
+        <li>
+          <div class="partner-logo"><img src="partenaires/garnisseur.png" alt=""></div>
+          <p>Garnisseur Goutière</p>
+        </li>
+        <li>
+          <div class="partner-logo"><img src="partenaires/kings.png" alt=""></div>
+          <p>King's Shop</p>
+        </li>
+        <li>
+          <div class="partner-logo"><img src="partenaires/mch.png" alt=""></div>
+          <p>MCH.concept -Quincaillerie</p>
+        </li>
+      </ul>
+      <ul class="partner-row">
+        <li>
+          <div class="partner-logo"><img src="partenaires/nnc.png" alt=""></div>
+          <p>NNC-Construction</p>
+        </li>
+        <li>
+          <div class="partner-logo"><img src="partenaires/aristide.png" alt=""></div>
+          <p>aristide</p>
+        </li>
+        <li>
+          <div class="partner-logo"><img src="partenaires/hoornaert.png" alt=""></div>
+          <p>Hoornaert Olivier - Géomètre expert et architecte</p>
+        </li>
+        <li>
+          <div class="partner-logo"><img src="partenaires/super8.png" alt=""></div>
+          <p>Super 8</p>
+        </li>
+        <li>
+          <div class="partner-logo"><img src="partenaires/legrain.png" alt=""></div>
+          <p>H.LEGRAIN-store</p>
+        </li>
+      </ul>
+      <ul class="partner-row is-one">
+        <li>
+          <div class="partner-logo"><img src="partenaires/dmi.png" alt=""></div>
+          <p>DMI.floor</p>
+        </li>
+      </ul>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/data.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
